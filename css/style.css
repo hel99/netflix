@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+#changeText {
+    font-size: 50px;
+    font-weight: bold;
+    height: auto;
+}
+
+.top-nav {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+}
+
+.top-nav a:hover {
+    zoom: 1.5;
+}
+
+.top-nav a.active {
+    color: rgb(197, 23, 23);
+}
+
+.logo1 {
+    width: 30%;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    padding-left: 14px;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.menu ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.menu ul li a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.headline {
+    background-image: url('mc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.headline-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+}
+
+.headline-text-item {
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+}
+
+.headline-text-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.headline-text-item p {
+    font-size: 18px;
+}
+
+.main-content {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5% 0;
+}
+
+.main {
+
+    flex: 1;
+    padding: 3%;
+
+    text-align: center;
+    color: #ffffff;
+}
+
+#button {
+    background-color: rgb(27, 114, 30);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+    border: #000000;
+}
+
+.button {
+    background-color: rgb(197, 23, 23);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 0%;
+    color: #ffffff;
+    border: #ffffff;
+}
+
+.hh:hover {
+    zoom: 1.1;
+}
+
+@media all and (max-width:500px) {
+    .top-nav {
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        padding: 18px 0 0;
+    }
+
+    .menu ul {
+
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .menu ul li {
+        padding: 0px;
+    }
+
+    .headline-text-item {
+        width: 100%;
+    }
+
+    .headline-text-item h3 {
+        font-size: 0em;
+    }
+
+    .main-content {
+
+        flex-direction: column;
+    }
+
+    .parallax {
+        background-image: url("logo.jpg") !important;
+    }
+}
+
+@media all and (max-width:800px) {
+    .top-nav {
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        padding: 18px 0 0;
+    }
+
+    .menu ul {
+
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .menu ul li {
+        padding: 0px;
+    }
+
+    .headline-text-item {
+        width: 100%;
+    }
+
+    .headline-text-item h3 {
+        font-size: 1;
+    }
+
+    .main-content {
+
+        flex-direction: column;
+    }
+
+    .parallax {
+
+        background-image: url("logo.jpg") !important;
+    }
+}
+
+body {
+    background: #000000;
+    font: normal 18px/1.5 "Fira Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contactForm {
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.item h2 {
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 18px;
+}
+
+.item input[type="text"] {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    height: 1px;
+    width: 30%;
+    color: #000000;
+}
+
+.item input[type="password"] {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    height: 1px;
+    width: 30%;
+    color: #000000;
+}
+
+.item input[type="email"] {
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    height: 1px;
+    width: 30%;
+    color: #000000;
+}
+
+.item textarea {
+    border-radius: 10px;
+    height: 100px;
+    padding: 15px;
+    width: 30%;
+    color: #000000;
+}
+
+.item button {
+    height: 30px;
+    width: 15%;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.next {
+    position: relative;
+    margin-left: -45px;
+    z-index: 100;
+}
+
+.icon {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 5px solid red;
+    border-radius: 100%;
+}
+
+.icon::after {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin: 1px 0px 0 -6px;
+    display: block;
+    content: '';
+    border: 6px solid transparent;
+    border-top: 10px solid red;
+    border-bottom: none;
+}
+
+.some-page-wrapper {
+    margin: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.blue-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    flex-direction: column;
+}
+
+.column-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green-column {
+    height: 200px;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .column {
+        flex: 1
+    }
+
+    .double-column {
+        flex: 2
+    }
+
+    .tv {
+        height: 200px;
+        width: 250px;
+    }
+}
+
+.tv {
+    height: 200px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.parallax {
+
+    background-image: url("nf.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.collapsible {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: transparent;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.breaking-bad {
+    cursor: pointer;
+}
